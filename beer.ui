@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BeerApp</class>
+ <widget class="QWidget" name="BeerApp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ლუდის ამომრჩევი</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QWidget {
+        background-color: black;
+        color: yellow;
+        font: 12pt "Arial";
+    }
+    QLabel {
+        color: yellow;
+        font-weight: bold;
+    }
+    QComboBox {
+        background-color: #333300;
+        color: yellow;
+        selection-background-color: yellow;
+        selection-color: black;
+    }
+    QPushButton {
+        background-color: yellow;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        padding: 6px;
+    }
+    QPushButton:hover {
+        background-color: #ffff66;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="labelIntro">
+     <property name="text">
+      <string>აირჩიე ლუდის მახასიათებლები:</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="labelCountry">
+     <property name="text">
+      <string>ქვეყანა:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="countryComboBox"/>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="labelColor">
+     <property name="text">
+      <string>ფერი:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="colorComboBox"/>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="labelTaste">
+     <property name="text">
+      <string>გემო:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="tasteComboBox"/>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="labelFiltered">
+     <property name="text">
+      <string>გაფილტვრა:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="filteredComboBox"/>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="labelFoam">
+     <property name="text">
+      <string>ქაფის რაოდენობა:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="foamComboBox"/>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="findButton">
+     <property name="text">
+      <string>იპოვე ლუდი</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
